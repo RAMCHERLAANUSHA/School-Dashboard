@@ -1,0 +1,85 @@
+.background {
+  background-image: url('./src/assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100vw;
+  position: fixed;
+  margin-left: -8px;
+  margin-top: -8px;
+}
+
+.head {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.headOne {
+  font-size: 4em;
+}
+
+.headSecond {
+  font-size: 2em;
+}
+
+.headThree {
+  font-size: 2em;
+}
+
+.submitContainer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  margin-left: -20px;
+  width: 100px;
+  box-shadow: 0 4px 6px rgba(248, 252, 197, 0.4);
+}
+
+@media (max-width: 768px) {
+  .head {
+      padding-top: 40px;
+  }
+
+  .headOne {
+      font-size: 3em;
+  }
+
+  .headSecond, .headThree {
+      font-size: 1.5em;
+  }
+
+  .submitButton {
+      width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head {
+      padding-top: 30px;
+  }
+
+  .headOne {
+      font-size: 2.5em;
+  }
+
+  .headSecond, .headThree {
+      font-size: 1.2em;
+  }
+
+  .submitButton {
+      width: 70px;
+      padding: 8px;
+  }
+}

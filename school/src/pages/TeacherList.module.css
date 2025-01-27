@@ -1,0 +1,132 @@
+.teacher-list-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher-list-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.teacher-table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.teacher-table th,
+.teacher-table td {
+  padding: 10px;
+  text-align: center; 
+  border-bottom: 1px solid #ddd;
+}
+
+.teacher-table th {
+  background-color: rgb(44, 43, 43);
+  color: white;
+}
+
+.teacher-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.teacher-table td {
+  font-size: 14px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.searchContainer {
+  margin-top: 15px;
+  display: flex;
+  width: 50%; 
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center; 
+}
+
+.searchInput {
+  width: 80%; 
+  padding: 10px;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-right: 0; 
+  margin-top: 10px;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  border-radius: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+
+.searchButton:hover {
+  background-color: #45a049;
+}
+
+.editButton {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editButton:hover {
+  background-color: #ec971f;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteButton:hover {
+  background-color: darkred;
+}
+
+.teacher-table td button {
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,111 @@
+.navbar {
+    background-color: rgb(44, 43, 43);
+    padding: 5px;
+    margin-left: -8px;
+    width: 100%;
+    padding-right: 12px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.school {
+    padding-right: 500px;
+    align-items: center;
+    margin-top: -8px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    margin-bottom: -10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    body{
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+      .navbar ul {
+        gap: 15px;
+    }
+
+    .school {
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .school {
+        padding-right: 20px;
+        margin-top: 0;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+    justify-content: space-between; 
+  }
+
+  .navbar ul {
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    font-size: 16px;
+  }
+
+  .school {
+    font-size: 20px; 
+    padding-right: 200px; 
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  
+  .navbar ul {
+    flex-direction: row;
+    align-items: center;
+  }
+}
