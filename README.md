@@ -1,6 +1,6 @@
 # School Dashboard
 
-A web application developed using Django for the backend, React for the frontend, and SQLite as the database. This project is designed to manage and interact with student data in a school dashboard.
+A Responsive web application developed using Django for the backend, React for the frontend, and SQLite as the database. This project is designed to manage and interact with student data in a school dashboard.
 
 ## Features
 - Manage student data (CRUD operations)
