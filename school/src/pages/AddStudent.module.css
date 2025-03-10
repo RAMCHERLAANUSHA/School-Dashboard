@@ -1,54 +1,113 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .add-student-container {
   width: 50%;
+  max-width: 600px; 
   margin: 20px auto;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .add-student-container h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
 }
 
 .form-group {
   margin-bottom: 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
+
 .form-group label {
-  width: 30%;
+  font-weight: bold;
+  margin-bottom: 5px;
+  /* color: #555; */
   text-align: left;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-  width: 65%;
-  padding: 8px;
+  width: 98%;
+  padding: 10px;
   margin-top: 5px;
-  box-sizing: border-box;
   border: 1px solid #ccc;
-  border-radius: 8px; 
+  border-radius: 8px;
   background-color: rgb(162, 252, 162);
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .form-group select {
   appearance: none; 
-  background-color: rgb(162, 252, 162);
+  cursor: pointer;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
+.save {
+  width: 100%; 
+  max-width: 250px;
+  padding: 12px;
   background-color: #28a745;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: block;
+  margin: 10px auto;
 }
 
 button:hover {
   background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .add-student-container {
+    width: 80%; 
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-student-container {
+    width: 90%;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .save {
+    width: 100%;
+    max-width: 150px;
+    font-size: 14px;
+    padding: 10px;
+  }
+    
 }

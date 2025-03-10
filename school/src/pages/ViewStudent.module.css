@@ -1,17 +1,23 @@
+/* Student Details Container */
 .student-details-container {
-  width: 50%;
+  width: 60%;
+  max-width: 800px;
   margin: 20px auto;
-  padding: 10px;
+  padding: 15px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
 }
 
+/* Heading */
 .student-details h2 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
 
+/* Table Styles */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -20,14 +26,16 @@
 
 .table th,
 .table td {
-  padding: 10px 15px;
+  padding: 12px;
   text-align: left;
   border: 1px solid #ddd;
+  white-space: nowrap; /* Prevents text from breaking in small columns */
 }
 
 .table th {
   background-color: #f2f2f2;
   font-weight: bold;
+  text-align: center;
 }
 
 .table tr:nth-child(even) {
@@ -38,8 +46,50 @@
   background-color: #f1f1f1;
 }
 
+/* Error Message */
 .error {
   color: red;
   text-align: center;
   margin-top: 20px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .student-details-container {
+    width: 80%;
+    padding: 12px;
+  }
+
+  .student-details h2 {
+    font-size: 20px;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-details-container {
+    width: 80%;
+  }
+
+  .student-details h2 {
+    font-size: 18px;
+  }
+
+  .table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 2%;
+  }
+
+  .table th,
+  .table td {
+    font-size: 12px;
+  }
 }

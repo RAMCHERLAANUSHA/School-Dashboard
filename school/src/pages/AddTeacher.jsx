@@ -58,7 +58,7 @@ export default function AddTeacher() {
   return (
     <div>
       <Navbar />
-      <div className={styles["add-student-container"]}>
+      <div className={styles["add-teacher-container"]}>
         <h2>Add Teacher</h2>
 
         {error && <p style={{ color: "red" }}>{error}</p>}
@@ -124,7 +124,7 @@ export default function AddTeacher() {
             />
           </div>
 
-          <button type="submit">Add Teacher</button>
+          <button className={styles.save} type="submit">Add Teacher</button>
         </form>
       </div>
     </div>

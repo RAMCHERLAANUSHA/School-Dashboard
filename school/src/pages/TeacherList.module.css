@@ -1,5 +1,6 @@
 .teacher-list-container {
-  width: 80%;
+  width: 53%;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -17,16 +18,18 @@
 
 .teacher-table {
   width: 100%;
-  max-width: 1200px;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 10px;
+  overflow-x: auto;
+  display: block;
 }
 
 .teacher-table th,
 .teacher-table td {
   padding: 10px;
-  text-align: center; 
+  text-align: center;
   border-bottom: 1px solid #ddd;
+  white-space: nowrap;
 }
 
 .teacher-table th {
@@ -49,59 +52,59 @@
 }
 
 .searchContainer {
-  margin-top: 15px;
+  width: 90%;
+  max-width: 500px;
   display: flex;
-  width: 50%; 
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
   justify-content: center;
-  align-items: center; 
+  gap: 10px;
+  margin: 15px auto 20px;
 }
 
 .searchInput {
-  width: 80%; 
-  padding: 10px;
+  flex: 1;
+  padding: 5px;
   border-radius: 16px;
   border: 1px solid #ccc;
   font-size: 16px;
-  margin-right: 0; 
-  margin-top: 10px;
+}
+.searchInput::placeholder {
+  font-size: 15px;
 }
 
 .searchButton {
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 16px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   cursor: pointer;
   font-size: 16px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  margin-top: 5px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
-
 
 .searchButton:hover {
   background-color: #45a049;
 }
 
-.editButton {
-  background-color: #f0ad4e;
-  color: white;
-  padding: 6px 12px;
+.editButton,
+.deleteButton {
+  width: 40px;
+  height: 40px;
   font-size: 16px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.editButton {
+  background-color: #f0ad4e;
+  color: white;
 }
 
 .editButton:hover {
@@ -111,15 +114,6 @@
 .deleteButton {
   background-color: red;
   color: white;
-  padding: 6px 12px;
-  font-size: 16px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .deleteButton:hover {
@@ -127,6 +121,87 @@
 }
 
 .teacher-table td button {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1024px) {
+  .teacher-list-container {
+    width: 70%;
+    padding: 15px;
+  }
+  .searchContainer{
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .teacher-list-container {
+    width: 75%;
+    padding: 15px;
+  }
+
+  .teacher-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .teacher-table th,
+  .teacher-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .searchContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+
+  .searchInput {
+    flex: 0 0 60%;
+  }
+
+  .searchButton {
+    flex: 0 0 30%;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .teacher-list-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .teacher-table th,
+  .teacher-table td {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .editButton,
+  .deleteButton {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .searchContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .searchInput {
+    flex: 0 0 60%;
+  }
+
+  .searchButton {
+    flex: 0 0 30%;
+    white-space: nowrap;
+  }
 }

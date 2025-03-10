@@ -1,61 +1,92 @@
-.add-student-container {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
+.add-teacher-container {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.add-teacher-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group label {
+  width: 30%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 65%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: rgb(162, 252, 162);
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgb(162, 252, 162);
+}
+
+.save {
+  width: 100%;
+  max-width: 250px;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: block;
+  margin: 10px auto;
+}
+
+.save:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .add-teacher-container {
+    width: 80%;
   }
-  
-  .add-student-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+
   .form-group {
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .form-group label {
-    width: 30%;
-    text-align: left;
-    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
   }
-  
+
   .form-group input,
   .form-group select,
   .form-group textarea {
-    width: 65%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 16px;
-    background-color: rgb(162, 252, 162);
+    width: 100%;
   }
-  
-  .form-group select {
-    appearance: none;
-    background-color: white;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: rgb(162, 252, 162);
+
+  .save {
+    width: 100%;
+    max-width: 200px;
+    font-size: 14px;
   }
-  
-  button {
-    width: 25%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-left: 250px;
-  }
-  
-  button:hover {
-    background-color: #218838;
-  }
-  
+}

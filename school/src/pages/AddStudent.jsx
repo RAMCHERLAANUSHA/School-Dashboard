@@ -214,7 +214,7 @@ export default function AddStudent() {
           />
         </div>
 
-        <button type="submit">Add Student</button>
+        <button className={styles.save} type="submit">Add Student</button>
       </form>
     </div>
     </div>
